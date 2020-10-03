@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+		<script>
+			window.onclick= function(){
+				document.getElementById('cal').addEventListener('click',calage);
+			}
+			
+			function calage(){
+				var age= document.getElementById('dogage').value;
+				age=age*7;
+				var result='In dog year, your dog is'+age;
+				document.getElementById('result').innerHTML=result;
+				
+			}
+				
+				
+			
+		</script>
+		<style>
+			#footer
+		
+			{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+			
+			
+			}
+		</style>
+    </head>
+    <body>
+		<div>
+			<script type="text/javascript" src="cordova.js"></script>
+			<h1>DOG YEAR CALCULATOR</h1>
+			<label for="dogage">Dog Age in Human Year:</label>
+			<input type="number" id="dogage">
+			<button id="cal">calculate</button>
+			<div id="result"></div>
+		</div>
+		<div>
+			</div>
+			<div data-role="footer" id="footer">
+				<h2>19mca1113 Sachin Jaiswal</h2>
+			</div>
+		</div>
+    </body>
+</html>
