@@ -1,0 +1,25 @@
+.suggestion_box {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-color: #fff;
+  overflow: hidden;
+  overflow-y: auto;
+  left: 45%;
+}
+
+.suggestion_box::-webkit-scrollbar {
+  display: none;
+}
+
+.suggestion {
+  text-decoration: none;
+}
+
+.suggestion a {
+  color: #000;
+}
+.suggestion:hover {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.212);
+}
